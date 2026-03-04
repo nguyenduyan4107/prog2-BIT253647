@@ -1,0 +1,14 @@
+# Bài 5
+arr = list(map(float, input("Nhập các số thực cách nhau bởi dấu cách: ").split()))
+
+for i in range(1, len(arr)):
+    key = arr[i]
+    j = i - 1
+
+    while j >= 0 and arr[j] < key:
+        arr[j + 1] = arr[j]
+        j -= 1
+
+    arr[j + 1] = key
+
+print("Sau khi sắp xếp giảm dần:", arr)
