@@ -1,0 +1,7 @@
+# Bài 13
+s = input("Nhập chuỗi: ")
+
+if s == s[::-1]:
+    print("Là Palindrome")
+else:
+    print("Không phải Palindrome")
